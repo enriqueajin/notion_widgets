@@ -25,10 +25,18 @@ body{
 
 .days, .hours, .minutes, .seconds {
   display: inline-block;
-  padding: 20px;
-  width: 65px;
-  height: 65px;
+  padding: 15px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
+}
+
+.caption {
+  font-size: 8px;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .days {
@@ -51,7 +59,7 @@ body{
 .numbers {
   font-family: 'Patrick Hand', sans-serif;
   color:  #183059;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -93,13 +101,13 @@ body{
 <div id="timer">
 
     <div class="days"> 
-        <div id="days" class="numbers "> </div>días</div> 
+        <div id="days" class="numbers "> </div><p class="caption">días</p></div> 
       <div class="hours"> 
-        <div  id="hours" class="numbers"> </div>horas</div> 
+        <div  id="hours" class="numbers"> </div><p class="caption">hrs.</p></div> 
       <div class="minutes"> 
-        <div  id="minutes" class="numbers"> </div>minutos</div> 
+        <div  id="minutes" class="numbers"> </div><p class="caption">min.</p></div> 
       <div   class="seconds"> 
-        <div id="seconds" class="numbers"> </div>segs.</div> 
+        <div id="seconds" class="numbers"> </div><p class="caption">segs.</p></div> 
       </div>
 
 </div>
