@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
     <title>Document</title>
     <style>
-  
-body {;
-  width: fit-content;
-}  
 
+body{
+    background-color: white;
+}
+  
 #timer {
-  display: flex;
-  width: 100%;
   color: #eeeeee;
   text-align: center;
   text-transform: uppercase;
@@ -25,9 +26,8 @@ body {;
 .days, .hours, .minutes, .seconds {
   display: inline-block;
   padding: 20px;
-  margin: 10px;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   border-radius: 100%;
 }
 
@@ -49,9 +49,9 @@ body {;
 }
 
 .numbers {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Patrick Hand', sans-serif;
   color:  #183059;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
 }
 
@@ -93,13 +93,13 @@ body {;
 <div id="timer">
 
     <div class="days"> 
-        <div id="days" class="numbers "> </div>DÍAS</div> 
+        <div id="days" class="numbers "> </div>días</div> 
       <div class="hours"> 
-        <div  id="hours" class="numbers"> </div>HORAS</div> 
+        <div  id="hours" class="numbers"> </div>horas</div> 
       <div class="minutes"> 
-        <div  id="minutes" class="numbers"> </div>MINUTOS</div> 
+        <div  id="minutes" class="numbers"> </div>minutos</div> 
       <div   class="seconds"> 
-        <div id="seconds" class="numbers"> </div>SEGUNDOS</div> 
+        <div id="seconds" class="numbers"> </div>segs.</div> 
       </div>
 
 </div>
@@ -107,7 +107,7 @@ body {;
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('Aug 30, 2024 00:00:00');
+const myDate = new Date('Oct 15, 2024 00:00:00');
 console.log(myDate);
 
 // countdown
